@@ -1,0 +1,15 @@
+.txt to .xlsx convert
+
+> setwd('C:/Users/username/Desktop/')
+> dir()
+[1] "table.txt"                 "txt'yi_xlsx'e_cevirme.txt"
+
+--- from Environment --- from text --- heading/yes --- import
+> View(table)
+> xlsx::write.xlsx(table, 'C:/Users/username/Desktop/tablenew.xlsx')
+
+or
+
+> table <- read.delim("C:/Users/username/Desktop/sample/table.txt")
+>   View(table)
+> xlsx::write.xlsx(table, 'tablonew.xlsx')
